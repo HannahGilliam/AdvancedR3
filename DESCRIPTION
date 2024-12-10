@@ -4,10 +4,17 @@ Type: Project
 Version: 0.0.1
 Imports:
     dplyr,
+    fs,
     here,
     knitr,
+    r3,
+    readr,
     readxl,
+    remotes,
     rmarkdown,
     snakecase,
+    stringr,
     tidyr
 Encoding: UTF-8
+Suggests: 
+    usethis
