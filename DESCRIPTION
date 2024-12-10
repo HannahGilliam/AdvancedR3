@@ -17,4 +17,5 @@ Imports:
     tidyr
 Encoding: UTF-8
 Suggests: 
+    gitcreds,
     usethis
