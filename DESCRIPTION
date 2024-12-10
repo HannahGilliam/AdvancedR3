@@ -19,3 +19,5 @@ Encoding: UTF-8
 Suggests: 
     gitcreds,
     usethis
+URL: https://github.com/HannahGilliam/AdvancedR3
+BugReports: https://github.com/HannahGilliam/AdvancedR3/issues
