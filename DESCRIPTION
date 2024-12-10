@@ -3,6 +3,11 @@ Package: AdvancedR3
 Type: Project
 Version: 0.0.1
 Imports:
+    dplyr,
+    here,
     knitr,
-    rmarkdown
+    readxl,
+    rmarkdown,
+    snakecase,
+    tidyr
 Encoding: UTF-8
