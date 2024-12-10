@@ -7,7 +7,7 @@ library(here)
 #install.packages("snakecase")
 library(snakecase)
 
-
+r3::install_packages_advanced()
 
 # Download dataset --------------------------------------------------------
 
