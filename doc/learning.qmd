@@ -14,11 +14,6 @@ format: html
 # Code chunk
 ```
 
-## Poorly formatted Markdown
-
--   List item 1
--   List item 2
-
 ```{r setup}
 library(tidyverse)
 source(here::here("R/functions.R"))
@@ -28,20 +23,6 @@ lipidomics <- read_csv(here::here("data/lipidomics.csv"))
 ## Basic statistics
 
 ```{r basic-stats}
-lipidomics %>%
-  group_by(metabolite) %>%
-  summarise(across(value, list(mean = mean, sd = sd))) %>%
-  mutate(across(where(is.numeric), ~ round(.x, digits = 1)))
-```
-
-```{r}
-descriptive_stats <- function(data){
-data %>%
-  dplyr::group_by(metabolite) %>%
-  dplyr::summarise(dplyr::across(value, list(mean = mean, sd = sd))) %>%
-mutate(dplyr::across(dplyr::where(is.numeric), ~ round(.x, digits = 1)))
-}
-
 descriptive_stats(lipidomics)
 
 ```
