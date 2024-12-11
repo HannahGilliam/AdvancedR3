@@ -8,17 +8,20 @@ Imports:
     ggplot2,
     here,
     knitr,
+    parsnip,
     quarto,
     r3,
     readr,
     readxl,
+    recipes,
     remotes,
     rmarkdown,
     snakecase,
     stringr,
     tarchetypes,
     targets,
-    tidyr
+    tidyr,
+    workflows
 Encoding: UTF-8
 Suggests: 
     gitcreds,
@@ -27,4 +30,5 @@ Suggests:
 URL: https://github.com/HannahGilliam/AdvancedR3
 BugReports: https://github.com/HannahGilliam/AdvancedR3/issues
 Depends: 
+    tidymodels,
     tidyverse
