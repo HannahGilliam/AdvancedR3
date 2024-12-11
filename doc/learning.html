@@ -234,6 +234,68 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 Computational engine: glm </code></pre>
 </div>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>lipidomics_wide <span class="ot">&lt;-</span> lipidomics <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column_values_to_snake_case</span>(metabolite) <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">metabolites_to_wider</span>()</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>lipidomics_wide</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 36 × 16
+   code   gender   age class metabolite_tms_interntal_s…¹ metabolite_cholesterol
+   &lt;chr&gt;  &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;                        &lt;dbl&gt;                  &lt;dbl&gt;
+ 1 ERI109 M         25 CT                           208.                   18.6 
+ 2 ERI111 M         39 CT                           219.                   20.8 
+ 3 ERI163 W         58 CT                            57.1                  15.5 
+ 4 ERI375 M         24 CT                            19.2                  10.2 
+ 5 ERI376 M         26 CT                            35.4                  13.5 
+ 6 ERI391 M         31 CT                            30.4                   9.53
+ 7 ERI392 M         24 CT                            21.7                   9.87
+ 8 ERI79  W         26 CT                           185.                   17.6 
+ 9 ERI81  M         52 CT                           207.                   17.0 
+10 ERI83  M         25 CT                           322.                   19.7 
+# ℹ 26 more rows
+# ℹ abbreviated name: ¹​metabolite_tms_interntal_standard
+# ℹ 10 more variables: metabolite_lipid_ch_3_1 &lt;dbl&gt;,
+#   metabolite_lipid_ch_3_2 &lt;dbl&gt;, metabolite_lipid_ch_2 &lt;dbl&gt;,
+#   metabolite_fa_ch_2_ch_2_coo &lt;dbl&gt;, metabolite_pufa &lt;dbl&gt;,
+#   metabolite_phosphatidylethanolamine &lt;dbl&gt;,
+#   metabolite_phosphatidycholine &lt;dbl&gt;, metabolite_phospholipids &lt;dbl&gt;, …</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>recipe_specs <span class="ot">&lt;-</span> lipidomics_wide <span class="sc">%&gt;%</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">create_recipe_spec</span>(metabolite_cholesterol)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>recipe_specs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Recipe ──────────────────────────────────────────────────────────────────────</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Inputs </code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Number of variables by role</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>outcome:          1
+predictor:        3
+undeclared role: 12</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Operations </code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>• Centering and scaling for: tidyselect::starts_with("metabolite_")</code></pre>
+</div>
+</div>
 </section>
 
 </main>

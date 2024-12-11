@@ -68,7 +68,6 @@ list(
   ),
   tar_quarto(
     name = quarto_doc,
-    #cue = targets::tar_cue("always"),
     path = "doc/learning.qmd"
   )
 )
