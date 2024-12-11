@@ -1,0 +1,9 @@
+---
+title: "Draft Quarto document"
+author: "Your Name"
+format: html
+---
+
+```{r setup}
+targets::tar_read(lipidomics)
+```
