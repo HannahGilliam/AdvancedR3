@@ -58,3 +58,17 @@ model_workflow <- create_model_workflow(
 )
 model_workflow
 ```
+
+```{r}
+fitted_model <- model_workflow %>% 
+    fit(lipidomics_wide)
+fitted_model
+
+```
+
+```{r}
+fitted_model %>% 
+    extract_fit_parsnip() %>% 
+     tidy(exponentiate = TRUE)
+
+```
