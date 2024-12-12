@@ -40,9 +40,13 @@ lipidomics_wide
 ## Running multiple models
 
 ```{r}
-lipidomics %>%
-  split_by_metabolite() %>%
-  map(generate_model_results) %>%
-  list_rbind() %>%
-  dplyr::filter(str_detect(term, "metabolite_"))
+model_estimates <- lipidomics %>% 
+    calculate_estimates() 
+model_estimates
+```
+
+## Fixing metabolite names
+
+```{r}
+
 ```

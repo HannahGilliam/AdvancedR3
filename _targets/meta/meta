@@ -1,14 +1,18 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|8934360eb7594a63|||||||||||||||
+.Random.seed|object|e22fba07f551200c|||||||||||||||
+calculate_estimates|function|3e2411ab8ea1c8e3|||||||||||||||
 column_values_to_snake_case|function|0b1d18d3f24a5435|||||||||||||||
 create_model_workflow|function|b1c4ccb7cbf5f62a|||||||||||||||
 create_recipe_spec|function|e2c69062d3a5c353|||||||||||||||
 descriptive_stats|function|867521af3d889db9|||||||||||||||
+df_model_estimates|stem|d9ceaf105e706dea|2954b8877e0c4723|97eab40e1668d7ea|791794764||t20069.4170445478s|7b0e517ba933dba2|1037|rds|local|vector|||1.646|glm.fit algorithm did not converge. glm.fit fitted probabilities numerically 0 or 1 occurred. glm.fit fitted probabilities numerically 0 or 1 occurred|
 df_stats_by_metabolite|stem|80c2fb919dbfc4cc|ce15a181d02b2e03|c91501c97ad1519f|519715527||t20068.4036966754s|c5d2549088e4e73e|505|rds|local|vector|||0.023||
 fig_metabolite_distribution|stem|62ecbd52462b3638|86673d84fb1f96ff|97af719b3d349242|1599393873||t20068.4036981785s|dd823a182043f702|137331|rds|local|vector|||0.072||
 file|stem|f6bf5a5688fb274f|09442fac263aded2|2c530c1562a7fbd1|1735323524|data/lipidomics.csv|t20061.9556221182s|2ec1867e6b7db575|24313|file|local|vector|||0.004||
+generate_model_results|function|afa7676a708937c7|||||||||||||||
 lipidomics|stem|62b5a03ba5e1dd6b|0adf46d83f39a429|f0e124423009cc2f|-1498393010||t20068.4036963735s|5efea0df906539e6|4884|rds|local|vector|||0.233||
 metabolites_to_wider|function|190c8cc4b495bfea|||||||||||||||
 plot_distributions|function|b06f65993fa8d2d0|||||||||||||||
-quarto_doc|stem|1ed58f121dfb3730|388f14abd14602e7|98b984156cfb3e4f|1582462002|doc/learning.html*doc/learning.qmd|t20069.3412253888s|6745180a97e5581d|31384|file|local|vector|||6.281||
+quarto_doc|stem|0dd51a1aad2614d7|388f14abd14602e7|98b984156cfb3e4f|1582462002|doc/learning.html*doc/learning.qmd|t20069.4171194548s|315fe2b3a7b9eb44|32227|file|local|vector|||6.465||
+split_by_metabolite|function|5a069d561722ab8b|||||||||||||||
 tidy_model_output|function|99603693ad824aa7|||||||||||||||
