@@ -1,5 +1,5 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|bd5bca1e6743e578|||||||||||||||
+.Random.seed|object|8934360eb7594a63|||||||||||||||
 column_values_to_snake_case|function|0b1d18d3f24a5435|||||||||||||||
 create_model_workflow|function|b1c4ccb7cbf5f62a|||||||||||||||
 create_recipe_spec|function|e2c69062d3a5c353|||||||||||||||
@@ -10,4 +10,5 @@ file|stem|f6bf5a5688fb274f|09442fac263aded2|2c530c1562a7fbd1|1735323524|data/lip
 lipidomics|stem|62b5a03ba5e1dd6b|0adf46d83f39a429|f0e124423009cc2f|-1498393010||t20068.4036963735s|5efea0df906539e6|4884|rds|local|vector|||0.233||
 metabolites_to_wider|function|190c8cc4b495bfea|||||||||||||||
 plot_distributions|function|b06f65993fa8d2d0|||||||||||||||
-quarto_doc|stem|349f5c845561e603|388f14abd14602e7|98b984156cfb3e4f|1582462002|doc/learning.html*doc/learning.qmd|t20068.606458788s|18ab833ae9e4976e|36306|file|local|vector|||6.193||
+quarto_doc|stem|1ed58f121dfb3730|388f14abd14602e7|98b984156cfb3e4f|1582462002|doc/learning.html*doc/learning.qmd|t20069.3412253888s|6745180a97e5581d|31384|file|local|vector|||6.281||
+tidy_model_output|function|99603693ad824aa7|||||||||||||||
