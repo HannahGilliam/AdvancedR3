@@ -40,13 +40,19 @@ lipidomics_wide
 ## Running multiple models
 
 ```{r}
-model_estimates <- lipidomics %>% 
-    calculate_estimates() 
+model_estimates <- lipidomics %>%
+  calculate_estimates()
 model_estimates
 ```
 
-## Fixing metabolite names
+## Figure of model estimates
 
 ```{r}
+model_estimates <- tar_read(df_model_estimates)
+```
 
+## Visualising the model estimates
+
+```{r}
+tar_read(fig_model_estimates)
 ```
